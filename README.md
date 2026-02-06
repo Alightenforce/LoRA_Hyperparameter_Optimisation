@@ -23,8 +23,8 @@ I tested seven distinct configurations to find the "Sweet Spot."
 | :---: | :---: | :---: |
 | ![v1](samples/v1_result.jpg) | ![v5](samples/v5_result.jpg) | ![v3](samples/v3_result.jpg) |
 
-## Configuration ($v5$)
-The final optimized parameters are stored in `hparamsV5.yaml`.
+## Configuration
+The final optimized parameters are stored in `TBC`.
 - **Optimizer:** AdamW8bit
 - **Scheduler:** Cosine with restarts
 - **Resolution:** 512x512
