@@ -3,7 +3,7 @@
 This repository documents the systematic tuning of a Stable Diffusion LoRA. Through 10 iterations, I optimized the relationship between **Network Rank** and **Learning Rate** to achieve maximum stylistic fidelity without model degradation.
 
 ## Optimising the model
-I tested seven distinct configurations to find the "Sweet Spot."
+I tested ten distinct configurations to find the "Sweet Spot."
 
 | Version | Rank ($r$)| Learning Rate | Total Checkpoints | Optimal checkpoint | Result |
 | :--- | :---: | :---: | :--- | :--- | :--- |
