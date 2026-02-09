@@ -19,9 +19,9 @@ I tested ten distinct configurations to find the "Sweet Spot."
 | **v10** | 64 | 5e-5 | 2500 | TBC | TBC | TBC |
 
 ## Visual Comparison
-| High LR (v1) | Optimized (v5) | Low Rank (v3) |
+| Best Result (v8) | Second Best (v9) | Third Best (v10) |
 | :---: | :---: | :---: |
-| ![v1](samples/v1_result.jpg) | ![v5](samples/v5_result.jpg) | ![v3](samples/v3_result.jpg) |
+| <img src="https://github.com/user-attachments/assets/892829f5-9e91-4bdd-9a6d-7863b70cb3c7" width="400"> | <img src="https://github.com/user-attachments/assets/c2ae827c-c631-4b2d-8b21-83275e5d5d87" width="400"> | <img src="https://github.com/user-attachments/assets/c2604dc6-cc78-4d00-bb5e-99d56749f496" width="400"> |
 
 ## Configuration
 The final optimized parameters are stored in `TBC`.
