@@ -18,6 +18,9 @@ I tested ten distinct configurations to find the "Sweet Spot."
 | **v9** | 64 | 1e-4 | 1400 | 800 | Very accurate to the original; however, slight, noticeable burning | 
 | **v10** | 64 | 5e-5 | 3000 | 2750 | Fairly accurate to the original | 
 
+## Note
+v1 - v4 has unpadded images and worse tagging
+
 ## Visual Comparison
 
 ### 1. Best Result (High Rank, Fast Learn Rate) (v8)
