@@ -71,7 +71,7 @@ To replicate the results shown above, use the following parameters in your infer
 
 ## Configuration
 
-The final optimized parameters are stored in `TBC`.
+The final optimized parameters are stored in `hparamsV8.yml`.
 - **Optimizer:** AdamW8bit
 - **Scheduler:** Cosine with restarts
 - **Resolution**: 768x768 (Generated at 512x512 with 1.5x Hires. fix)
