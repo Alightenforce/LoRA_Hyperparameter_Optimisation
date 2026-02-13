@@ -3,7 +3,7 @@
 This repository documents the systematic tuning of a Stable Diffusion LoRA. Through 10 iterations, I optimised the relationship between **Network Rank** and **Learning Rate** to achieve maximum stylistic fidelity without model degradation/burning.
 
 ## Optimising the model
-I tested ten distinct configurations to find the model which could produce seamless replicas of Levi Ackerman from Attack on Titan
+I tested ten distinct configurations to find the model which could produce most accurate replicas of Levi Ackerman from Attack on Titan
 
 | Version | Rank ($r$)| Learning Rate | Total Checkpoints | Optimal checkpoint | Result |
 | :--- | :---: | :---: | :--- | :--- | :--- |
