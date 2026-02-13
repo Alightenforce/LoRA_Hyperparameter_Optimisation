@@ -7,16 +7,16 @@ I tested ten distinct configurations to find the model which could produce most 
 
 | Version | Rank ($r$)| Learning Rate | Total Checkpoints | Optimal checkpoint | Result |
 | :--- | :---: | :---: | :--- | :--- | :--- |
-| **v1** | 32 | 1e-4 | 900 | TBC | TBC | 
-| **v2** | 4 | 1e-4 | 500 | TBC | TBC | 
+| **v1** | 32 | 1e-4 | 800 | 800 | Fairly accurate to the original, facial structure is recognisable, and outfit is accurate | 
+| **v2** | 4 | 1e-4 | 500 | 500 | Artistic style is achieved, however, completely inaccurate to the portrayal of the character, but the outfit is accurately generated | 
 | **v3** | 16 | 1e-4 | 800 | 800 | Refer to v4 | 
-| **v4** | 16 | 1e-4 | 800 | 800 | General artistic style is achieved, however, far from any sort of accurate portrayal of the character | 
+| **v4** | 16 | 1e-4 | 800 | 800 | General artistic style is achieved, however, fairly far from any sort of accurate portrayal of the character, outfit is also generated accurately | 
 | **v5** | 32 | 1.5e-4 | 1200 | 750 | Refer to v7| 
-| **v6** | 32 | 1e-4 | 400 | TBC | Setting a control |
+| **v6** | 32 | 1e-4 | 400 | 400 | Setting a control |
 | **v7** | 32 | 1.5e-4 | 900 | 750 | Facial structure extremely accurate to the original; however, obvious eye issues caused by low rank | 
 | **v8** | 64 | 1.5e-4 | 1200 | 800 | Extremely accurate to the original | 
 | **v9** | 64 | 1e-4 | 1400 | 800 | Very accurate to the original; however, slight, noticeable burning | 
-| **v10** | 64 | 5e-5 | 3000 | 2750 | Fairly accurate to the original | 
+| **v10** | 64 | 5e-5 | 3000 | 2750 | Accurate to the original | 
 
 ## Note
 - During the training process, I realised the images I was using as inputs were centre-cropped by a 512x512 aspect ratio, and a lot of important pieces of the images were lost, which also messed with the tagging. As a result, v1 - v4 will have differing results compared to v5+ as I updated the tagging to match it more accurately and ensured images were padded such that the whole image was used in training. This is why v6 was a copy of v1, as I wanted to set a control version to keep track of improvements.
@@ -46,8 +46,18 @@ I tested ten distinct configurations to find the model which could produce most 
 
 ---
 
-### 5. Low Rank, Fast Learn Rate (v4)
+### 5. Medium Rank, Medium Learn Rate (v1)
+<img src="https://github.com/user-attachments/assets/c0fc9346-a7e8-4cb3-9668-ca5c894b8c6d" width="100%" />
+
+---
+
+### 6. Low Rank, Fast Learn Rate (v4)
 <img src="https://github.com/user-attachments/assets/e9d73914-1b0e-4c1b-852a-902ce9c01003" width="100%"/>
+
+---
+
+### 7. Very Low Rank, Medium Learn Rate (v2)
+<img src="https://github.com/user-attachments/assets/9b0d66f5-7d2d-4521-9ca6-83f82f4e0729" width="100%"/>
 
 ## Reproduction Settings
 To replicate the results shown above, use the following parameters in your inference pipeline.
